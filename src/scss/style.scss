@@ -1,0 +1,177 @@
+@import "helpers/variables";
+
+.container{
+	min-width: 400px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bg-black{
+	background:#000;
+	color:#fff;
+}
+
+#main-header{
+	img{
+	width:100%;
+	height:100%;
+	border-radius: 50%;
+	}
+
+	.port-item{	
+		width:25%;
+		.fa{
+			font-size:2.0em;
+		}
+	}
+
+	.port-item:hover{
+		opacity:0.8;
+		cursor:pointer;
+	}
+}
+
+#main-footer {
+	.social{
+		.fa {
+		font-size: 1.5em;
+		color: #fff;		
+			&:hover{
+				color: $light-blue;
+			}
+		}
+	}
+
+	.btn:hover{
+		color: $grey;
+	}
+}
+
+.work-icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 10%;
+}
+
+.card {
+	ul{
+		padding-left: 0;
+		.fa-chevron-right { 
+			margin-right: 10px;
+			font-size: 10px;
+		}
+		li {
+			list-style-type: none;
+		}
+	}
+}
+
+.home-bg {
+	background-color: $home-bg;
+}
+
+.home-bg-2 {
+	background-color: rgba($home-bg, .55);
+}
+
+.home-bg-3 {
+	background-color: rgba($home-bg, .15);
+}
+
+.exp-bg {
+	background-color: $exp-bg;
+}
+
+.exp-bg-2 {
+	background-color: rgba($exp-bg, .55);
+}
+
+.exp-bg-3 {
+	background-color: rgba($exp-bg, .15);
+}
+
+.edu-bg {
+	background-color: $edu-bg;
+}
+
+.edu-bg-2 {
+	background-color: rgba($edu-bg, .55);
+}
+
+.edu-bg-3 {
+	background-color: rgba($edu-bg, .15);
+}
+
+.port-bg {
+	background-color: $port-bg;
+}
+
+.port-bg-2 {
+	background-color: rgba($port-bg, .55);
+}
+
+.port-bg-3 {
+	background-color: rgba($port-bg, .15);
+}
+
+.progress{
+	background-color: #d5d8da;
+}
+
+.bar-green {
+	background-color: $bar-green;
+}
+
+.bar-amber {
+	background-color: $bar-amber;
+}
+
+.bar-red {
+	background-color: $bar-red;
+}
+
+.card {
+	border-radius: 0;
+	border: none;
+	.card-header{
+		border-bottom: none;
+	}
+}
+
+.card-deck{
+	margin-right:0;
+	margin-left:0;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#portfolio {
+	.row{
+		.card{
+		min-height: 340px;
+		}
+		.img{
+		min-height: 300px;
+		}
+	}
+}
+
+@media(min-width:1199px){
+	.port-item{
+		padding:1em 1.5em !important;
+	}
+}
+
+@media(max-width:500px){
+	.port-item{
+		font-size: 0.75em;
+	}
+	.social{
+		font-size: 0.75em;
+	}
+	.btn-outline-light{
+		font-size: 0.75em;
+	}
+}
